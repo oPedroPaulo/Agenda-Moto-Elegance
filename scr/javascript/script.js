@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const prices = {
-    prata: { urbana: 80, trail: 100, bigtrail: 120, custom: 130, carenada: 140 },
-    ouro: { urbana: 180, trail: 210, bigtrail: 220, custom: 240, carenada: 250 },
-    rubi: { urbana: 230, trail: 250, bigtrail: 280, custom: 300, carenada: 330 },
-    esmeralda: { urbana: 480, trail: 520, bigtrail: 550, custom: 580, carenada: 610 },
-    diamante: { urbana: 360, trail: 380, bigtrail: 400, custom: 440, carenada: 450 }
+    prata: { urbana: 89.90, trail: 109.90, bigtrail: 119.90, custom: 129.90, carenada: 139.90 },
+    ouro: { urbana: 189.90, trail: 219.90, bigtrail: 229.90, custom: 249.90, carenada: 249.90 },
+    diamante: { urbana: 389.90, trail: 419.90, bigtrail: 459.90, custom: 499.90 },
+    esmeralda: { urbana: 459.90, trail: 549.90, bigtrail: 569.90, custom: 579.90, carenada: 579.90 },
+    manutencao: { urbana: 109.90, trail: 129.90, bigtrail: 139.90, custom: 149.90, carenada: 159.90 }
 };
 
 const motoTypeNames = {
