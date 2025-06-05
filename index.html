@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="scr/styles/styles.css">
+    
+    <link rel="shortcut icon" href="scr/images/logo-png.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Moto Elegance - Melhor Estética Automotiva Moto Uberaba</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="aviso-container" id="avisoPrecos">
+    <div class="aviso-conteudo">
+        <button class="fechar-aviso" id="fecharAvisoBtn">&times;</button>
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>TODOS OS VALORES INFORMADOS SÃO VALORES INICIAIS. PARA CONFIRMAÇÃO DO VALOR, SERÁ PASSADO ANTES DE INICIAR A LAVAGEM COM A MOTO NO LOCAL.</p>
+    </div>
+</div>
+
+    <nav id="navbar">
+        <!-- Logo como imagem (substitua o caminho) -->
+        <img src="scr/images/logo_header.png" alt="Moto Elegance" id="nav-logo">
+
+        <ul id="nav-list">
+            <li class="nav-item active">
+                <a href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#menu">Lavagens</a>
+            </li>
+            <li class="nav-item">
+                <a href="#extra">Adicionais</a>
+            </li>
+        </ul>
+
+        <!-- Botão para menu mobile -->
+        <button id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Menu mobile (mantido completo) -->
+    <div id="mobile-menu">
+        <ul id="mobile-nav-list">
+            <li class="nav-item">
+                <a href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#menu">Lavagens</a>
+            </li>
+            <li class="nav-item">
+                <a href="#extra">Adicionais</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    Não lavamos moto, lavamos 
+                    <span>Sonhos</span>
+                </h1>
+
+                <p class="description">Sua moto não é só máquina – é identidade sobre duas rodas. Personalize. Domine. Destaque-se.</p>
+
+                    <div id="cta_buttons">
+                        <a href="#extra" class="btn-default">
+                            Ver lavagens
+                        </a>                      
+                    </div>
+
+                    <div class="social-media-buttons">
+                        <a href="https://wa.me/553492452707">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/motoelegance/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+            </div>
+            <div id="banner">   
+                <img src="scr/images/African-Twin.png" alt="African Twin">
+            </div>
+        </section>
+
+        <div class="servicos-container" id="menu">
+    <!-- Lavagem Prata (Tratamento de Entrada) -->
+    <div class="servico-card prata">
+        <div class="servico-title">TRATAMENTO DE ENTRADA</div>
+        <div class="servico-details">
+            <ul>
+                <li>LAVAGEM COMPLETA (SEM DESMONTAGEM)</li>
+                <li>PRÉ-LAVAGEM E DETALHAMENTO</li>
+                <li>SHAMPOO COM ESFREGAÇÃO</li>
+                <li>SECAGEM TOTAL</li>
+                <li>CERA EM PASTA PARA BRILHO</li>
+                <li>RENOVAÇÃO DOS PLÁSTICOS</li>
+                <li>SELANTE NOS PNEUS</li>
+            </ul>
+        </div>
+        <div class="servico-time">TEMPO DE SERVIÇO: 3 A 5 HORAS</div>
+        
+        <select class="moto-type-select" data-service="prata">
+            <option value="urbana">Moto Urbana - R$89,90</option>
+            <option value="trail">Moto Trail - R$109,90</option>
+            <option value="bigtrail">Moto Big Trail - R$119,90</option>
+            <option value="custom">Moto Custom - R$129,90</option>
+            <option value="carenada">Moto Carenada - R$139,90</option>
+        </select>
+        
+        <div class="price" id="prata-price">R$89,90</div>
+        <button class="add-to-cart" data-service="prata">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Lavagem Ouro (Tratamento Elegance) -->
+    <div class="servico-card ouro">
+        <div class="servico-title">TRATAMENTO ELEGANCE</div>
+        <div class="servico-details">
+            <ul>
+                <li>DESMONTAGEM DE PEÇAS</li>
+                <li>LAVAGEM PESADA E DETALHAMENTO MINUCIOSO</li>
+                <li>ESFREGAÇÃO COM SHAMPOO</li>
+                <li>SECAGEM TOTAL</li>
+                <li>CERA PARA BRILHO</li>
+                <li>REVITALIZAÇÃO DOS PLÁSTICOS</li>
+                <li>VERNIZ NO MOTOR</li>
+                <li>SELANTE NOS PNEUS</li>
+                <li>MONTAGEM DAS PEÇAS</li>
+            </ul>
+        </div>
+        <div class="servico-time">TEMPO DE SERVIÇO: 1 DIA</div>
+        
+        <select class="moto-type-select" data-service="ouro">
+            <option value="urbana">Moto Urbana - R$189,90</option>
+            <option value="trail">Moto Trail - R$219,90</option>
+            <option value="bigtrail">Moto Big Trail - R$229,90</option>
+            <option value="custom">Moto Custom - R$249,90</option>
+            <option value="carenada">Moto Carenada - R$249,90</option>
+        </select>
+        
+        <div class="price" id="ouro-price">R$189,90</div>
+        <button class="add-to-cart" data-service="ouro">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Tratamento Premium (antiga Diamante) -->
+    <div class="servico-card diamante">
+        <div class="servico-title">TRATAMENTO PREMIUM</div>
+        <div class="servico-details">
+            <ul>
+                <li>DESMONTAGEM DAS PEÇAS</li>
+                <li>LAVAGEM CAPRICHADA</li>
+                <li>DETALHAMENTO COMPLETO</li>
+                <li>ESFREGAÇÃO E SECAGEM TOTAL</li>
+                <li>DESCONTAMINAÇÃO DA PINTURA E PLÁSTICOS</li>
+                <li>VITRIFICADOR NA PINTURA E PLÁSTICOS (3-4 ANOS)</li>
+                <li>VERNIZ NO MOTOR</li>
+                <li>SELANTE NOS PNEUS</li>
+                <li>MONTAGEM DAS PEÇAS</li>
+            </ul>
+        </div>
+        <div class="servico-time">TEMPO DE SERVIÇO: 3 A 4 DIAS</div>
+        
+        <select class="moto-type-select" data-service="diamante">
+            <option value="urbana">Moto Urbana - R$389,90</option>
+            <option value="trail">Moto Trail - R$419,90</option>
+            <option value="bigtrail">Moto Big Trail - R$459,90</option>
+            <option value="custom">Moto Custom - R$499,90</option>
+        </select>
+        
+        <div class="price" id="diamante-price">R$389,90</div>
+        <button class="add-to-cart" data-service="diamante">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Tratamento Executivo (Lavagem Esmeralda) -->
+    <div class="servico-card esmeralda">
+        <div class="servico-title">TRATAMENTO EXECUTIVO</div>
+        <div class="servico-details">
+            <ul>
+                <li>DESMONTAGEM DAS PEÇAS</li>
+                <li>PRÉ-LAVAGEM E DETALHAMENTO PROFUNDO</li>
+                <li>ESFREGAÇÃO COM SHAMPOO</li>
+                <li>SECAGEM TOTAL</li>
+                <li>DESCONTAMINAÇÃO COMPLETA</li>
+                <li>VITRIFICADOR NA PINTURA, PLÁSTICOS, MOTOR E RODAS (ATÉ 4 ANOS)</li>
+                <li>SELANTE NOS PNEUS</li>
+                <li>MONTAGEM DAS PEÇAS</li>
+            </ul>
+        </div>
+        <div class="servico-time">TEMPO DE SERVIÇO: 3 A 5 DIAS</div>
+        
+        <select class="moto-type-select" data-service="esmeralda">
+            <option value="urbana">Moto Urbana - R$459,90</option>
+            <option value="trail">Moto Trail - R$549,90</option>
+            <option value="bigtrail">Moto Big Trail - R$569,90</option>
+            <option value="custom">Moto Custom - R$579,90</option>
+            <option value="carenada">Moto Carenada - R$579,90</option>
+        </select>
+        
+        <div class="price" id="esmeralda-price">R$459,90</div>
+        <button class="add-to-cart" data-service="esmeralda">ADICIONAR AO CARRINHO</button>
+    </div>
+</div>
+
+     <!-- Seção de Serviços Adicionais -->
+    <h2 class="section-title">SERVIÇOS ADICIONAIS</h2>
+<div class="servicos-adicionais-container" id="extra">
+    <!-- Polimento de Tanque -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">POLIMENTO DE TANQUE</div>
+        <div class="servico-details">
+            <p>Polimento profissional com proteção de até 6 meses</p>
+        </div>
+        <div class="price">A PARTIR DE R$60,90</div>
+        <button class="add-to-cart" data-service="polimento_tanque" data-price="60.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Polimento Completo -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">POLIMENTO COMPLETO</div>
+        <div class="servico-details">
+            <p>Polimento profissional em toda moto com proteção de até 6 meses</p>
+        </div>
+        <div class="price">A PARTIR DE R$139,90</div>
+        <button class="add-to-cart" data-service="polimento_completo" data-price="139.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Tratamento de Motor -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">TRATAMENTO DE MOTOR</div>
+        <div class="servico-details">
+            <p>Clareamento e tratamento para remover manchas (ideal para tirar manchas ocasionadas por produtos)</p>
+        </div>
+        <div class="price">A PARTIR DE R$129,90</div>
+        <button class="add-to-cart" data-service="tratamento_motor" data-price="129.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Tratamento de Bacalhau -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">TRATAMENTO DE BACALHAU</div>
+        <div class="servico-details">
+            <p>Tratamento e clareamento do banco de couro</p>
+        </div>
+        <div class="price">A PARTIR DE R$29,90</div>
+        <button class="add-to-cart" data-service="tratamento_bacalhau" data-price="29.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Revitalização de Escapamento -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">REVITALIZAÇÃO DE ESCAPAMENTO</div>
+        <div class="servico-details">
+            <p>Recuperação do brilho e proteção do escapamento</p>
+        </div>
+        <div class="price">A PARTIR DE R$19,90</div>
+        <button class="add-to-cart" data-service="revitalizacao_escapamento" data-price="19.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Vitrificação de Pintura -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">VITRIFICAÇÃO DE PINTURA</div>
+        <div class="servico-details">
+            <p>Proteção profissional para pintura (3-4 anos)</p>
+        </div>
+        <div class="price">A PARTIR DE R$69,90</div>
+        <button class="add-to-cart" data-service="vitrificacao_pintura" data-price="69.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Vitrificação de Plásticos -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">VITRIFICAÇÃO DE PLÁSTICOS</div>
+        <div class="servico-details">
+            <p>Proteção profissional para plásticos (3-4 anos)</p>
+        </div>
+        <div class="price">A PARTIR DE R$49,90</div>
+        <button class="add-to-cart" data-service="vitrificacao_plasticos" data-price="49.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Vitrificação de Motor -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">VITRIFICAÇÃO DE MOTOR</div>
+        <div class="servico-details">
+            <p>Proteção profissional para motor (3-4 anos)</p>
+        </div>
+        <div class="price">A PARTIR DE R$75,90</div>
+        <button class="add-to-cart" data-service="vitrificacao_motor" data-price="75.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Vitrificação de Rodas -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">VITRIFICAÇÃO DE RODAS</div>
+        <div class="servico-details">
+            <p>Proteção profissional para rodas (3-4 anos)</p>
+        </div>
+        <div class="price">A PARTIR DE R$29,90</div>
+        <button class="add-to-cart" data-service="vitrificacao_rodas" data-price="29.90">ADICIONAR AO CARRINHO</button>
+    </div>
+    
+    <!-- Tratamento de Ferrugem -->
+    <div class="servico-adicional-card">
+        <div class="servico-title">TRATAMENTO DE FERRUGEM</div>
+        <div class="servico-details">
+            <p>Remoção e proteção contra ferrugem</p>
+        </div>
+        <div class="price">A PARTIR DE R$59,90</div>
+        <button class="add-to-cart" data-service="tratamento_ferrugem" data-price="59.90">ADICIONAR AO CARRINHO</button>
+    </div>
+</div>
+
+    <div id="carrinho-flutuante">
+    <button id="toggle-carrinho" class="btn-default">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="carrinho-contador">0</span>
+    </button>
+    <div id="carrinho-conteudo">
+        <h3>Carrinho</h3>
+        <ul id="carrinho-lista"></ul>
+        <p>Total: <span id="carrinho-total">R$0,00</span></p>
+        <div class="carrinho-botoes">
+            <button class="btn-default" id="limpar-carrinho">Limpar</button>
+            <button class="btn-default" id="finalizar-pedido">Finalizar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="script.js"></script>
+
+    <footer>
+        <img src="scr/images/wave.svg" alt="wave">
+
+        <div id="footer_itens">
+            <span id="copyright">
+                Moto Elegance Detail &copy 2025 - Agenda Moto Elegance Detail - Todos os direitos reservados.
+                <br>
+                Desenvolvido por
+                <a href="https://www.instagram.com/webdpx?igsh=Z3lzem9hMTVocnpt" target="_blank"> 
+                    Web DPX
+                </a>
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/553492452707">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/motoelegance/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="scr/javascript/script.js"></script>
+    <div id="notification" class="notification">
+    <span id="notification-message"></span>
+</div>
+</body>
+</html>
